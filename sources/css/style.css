@@ -1,42 +1,98 @@
-body
-{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
+
+.jumbotron .container {
+  max-width: 40rem;
 }
 
-header 
-{
-    background-color: #9C36B5;
+#Pagination {
+  display: none;
 }
 
-/* SECTION 01 */
-.container-fluid {
-    padding: 0% 15% 0% 10%;
+.pagination {
+  visibility: hidden;
+  justify-content: center;
+  margin-bottom:0;
+}
+
+.page-link {
+  background: none;
+  border-color: #9C36B5;
+}
+
+.page-link:HOVER {
+  border-color: #9C36B5;
+}
+
+
+.row img{
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-size:cover;
+  background-color:#efefef;
+}
+
+
+#github{position:absolute;right:0;top:0;}
+#github img{width:120px;}
+
+.fullwidth{max-width: 99% !important;}
+
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+      padding: 1rem;
+      padding-bottom: 0;
+      margin-bottom:1rem;
   }
 
-#title {
-    background-color: #9C36B5;
-    color: #fff;
-    overflow: hidden;
-    min-height: 80%;
-    text-align: center!important;
+  .pagination {
+      justify-content: inherit;
   }
 
-.imageMew{
-    max-width: 50%;
-    height: auto;
+  .page-link {
+      border-radius:1px !important;
   }
 
+  #filters {
+      overflow-x: scroll;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  #filters::-webkit-scrollbar {
+      display: none;
+  }
 
   
-.containerCards {
-    padding-top: 3%;
-    padding-left: 6%;
+  #github {display:none;}
+  #github img{width:80px;}
+
+  .fullwidth{max-width: 100% !important;}
 }
 
-.btn {
-    background-color: #8064A2 !important;
-    color: white;
+@media only screen and (min-width: 800px){
+  .jumbotron{
+      padding:2rem 2rem;
+      padding-bottom:1.5rem;
+  }
+
+  #github{
+      position:fixed;z-index: 2;
+  }
+
+  .fixed{
+      padding-top:260px;
+  }
+
+  .fixed .jumbotron{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+  }
+
 }
 
 .myFooter
